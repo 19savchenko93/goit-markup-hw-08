@@ -1,0 +1,26 @@
+/* Container */
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.filter-container {
+    margin-bottom: 50px;
+}
+
+.examples-container {
+    display: flex;
+}

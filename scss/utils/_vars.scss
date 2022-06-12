@@ -1,0 +1,16 @@
+/* General styles */
+:root {
+    /* Text colors */
+    --main-text-color: #757575;
+    --title-text-color: #212121;
+    --white-text-color: #ffffff;
+    /* Background and fill colors */
+    --accent-color: #2196f3;
+    --grey-icon-color: #afb1b8;
+    --background-gray: #f5f4fa;
+    --background-white: #ffffff;
+    --background-accent: #2f303a;
+    /* Transition */
+    --duration: 250ms;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

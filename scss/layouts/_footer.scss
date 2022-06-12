@@ -1,0 +1,121 @@
+/* Footer */
+.footer {
+    background-color: var(--background-accent);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__content {
+    margin-right: 70px;
+}
+
+.address__item {
+    margin-bottom: 9px;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.address__list {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.address__link.map {
+    color: var(--white-text-color);
+}
+
+.address__link {
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: color var(--duration) var(--timing-function);
+
+    &:hover, &:focus{
+        color: var(--accent-color);
+    }
+}
+
+.join {
+    margin-right: 93px;
+}
+
+.join__title {
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+    margin-bottom: 20px;
+}
+
+.sign-up {
+    margin-left: auto;
+}
+
+.sign-up__form {
+    display: flex;
+}
+
+.sign-up__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--white-text-color);
+}
+
+.sign-up__input {
+    display: inline-block;
+    padding-left: 16px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    width: 358px;
+    height: 50px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+
+    &::placeholder{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    &:focus{
+        border: 1px solid var(--accent-color);
+    }
+}
