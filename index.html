@@ -19,13 +19,12 @@
     <header class="header">
         <div class="container header-container">
             <a class="logo" href="./index.html"><span class="logo--accent">Web</span>Studio</a>
-            <button type="button" class="menu-button" data-menu-button>
+            <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                 <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                    <use class="icon-close" href="./images/icons/icons.svg#icon-close"></use>
                     <use class="icon-menu" href="./images/icons/icons.svg#icon-menu"></use>
                 </svg>
             </button>
-            <div class="menu-container" data-menu>
+            <div class="menu-desktop">
                 <nav class="navigation">
                     <ul class="navigation__list">
                         <li class="navigation__item"><a class="navigation__link current" href="./index.html ">Студия</a></li>
@@ -41,18 +40,39 @@
                             </svg>info@devstudio.com</a>
                     </li>
                     <li class="contact__item"><a class="contact__link" href="tel:+380961111111">
-                        <svg class="contact__icon" width="10" height="16">
-                            <use href="./images/icons/icons.svg#icon-smartphone"></use>
-                        </svg>+38 096 111 11 11</a>
+                            <svg class="contact__icon" width="10" height="16">
+                                <use href="./images/icons/icons.svg#icon-smartphone"></use>
+                            </svg>+38 096 111 11 11</a>
                     </li>
                 </ul>
-                <ul class="menu-socials">
-                    <li class="menu-socials__item"><a href=""></a></li>
-                    <li class="menu-socials__item"><a href=""></a></li>
-                    <li class="menu-socials__item"><a href=""></a></li>
-                    <li class="menu-socials__item"><a href=""></a></li>
-                </ul>
             </div>
+        </div>
+        <!-- MENU -->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu close">
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-close" href="./images/icons/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <ul class="menu-navigation__list">
+                <li class="menu-navigation__item"><a class="menu-navigation__link current" href="./index.html">Студия</a></li>
+                <li class="menu-navigation__item"><a class="menu-navigation__link" href="./portfolio.html">Портфолио</a></li>
+                <li class="menu-navigation__item"><a class="menu-navigation__link" href="./index.html">Контакты</a></li>
+            </ul>
+            <ul class="menu-contact">
+                <li class="menu-contact__item phone">
+                    <a class="menu-contact__link phone" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="menu-contact__item">
+                    <a class="menu-contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="menu-socials">
+                <li class="menu-socials__item"><a class="menu-socials__link" href="./index.html">Instagram</a></li>
+                <li class="menu-socials__item"><a class="menu-socials__link" href="./index.html">Twitter</a></li>
+                <li class="menu-socials__item"><a class="menu-socials__link" href="./index.html">Facebook</a></li>
+                <li class="menu-socials__item"><a class="menu-socials__link" href="./index.html">LinkedIn</a></li>
+            </ul>
         </div>
     </header>
     <main>
@@ -441,11 +461,11 @@
             </div>
         </section>
         <!-- Backdrop -->
-        <!-- <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button class="btn-close" data-modal-close>
                     <svg class="btn-close__icon" width="11" height="11">
-                        <use href="./images/icons.svg#icon-close-btn"></use>
+                        <use href="./images/icons/icons.svg#icon-close-btn"></use>
                     </svg>
                 </button>
                 <div class="modal-container">
@@ -454,19 +474,19 @@
                         <label class="form__group"> Имя
                             <input class="form__item" type="text" name="name">
                             <svg class="form__icon">
-                                <use href="./images/icons.svg#icon-user-icon"></use>
+                                <use href="./images/icons/icons.svg#icon-user-icon"></use>
                             </svg>
                         </label>
                         <label class="form__group"> Телефон
                             <input class="form__item" type="tel" name="phone">
                             <svg class="form__icon">
-                                <use href="./images/icons.svg#icon-phone-icon"></use>
+                                <use href="./images/icons/icons.svg#icon-phone-icon"></use>
                             </svg>
                         </label>
                         <label class="form__group"> Почта
                             <input class="form__item" type="email" name="email">
                             <svg class="form__icon">
-                                <use href="./images/icons.svg#icon-mail-icon"></use>
+                                <use href="./images/icons/icons.svg#icon-mail-icon"></use>
                             </svg>
                         </label>
                         <label class="form__group"> Комментарий
@@ -481,7 +501,7 @@
                     </form>
                 </div>
             </div>
-        </div> -->
+        </div>
     </main>
     <!-- Footer -->
     <footer class="footer">
@@ -546,6 +566,9 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 </html>

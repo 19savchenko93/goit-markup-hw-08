@@ -24,7 +24,7 @@
     top: 50%;
     left: 50%;
 
-    width: 528px;
+    width: 450px;
     background: var(--background-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -33,6 +33,11 @@
     transform: translate(-50%, -50%) scale(1);
 
     transition: transform var(--duration) var(--timing-function);
+
+    @media screen and (min-width:1200px) {
+        width: 528px;
+        
+    }
 }
 
 .btn-close {
@@ -63,11 +68,16 @@
 }
 
 .modal-container {
-    width: 448px;
+    width: 370px;
     margin-top: 40px;
     margin-left: 40px;
     margin-right: 40px;
     margin-bottom: 40px;
+
+    @media screen and (min-width:1200px) {
+        width: 448px;
+        
+    }
 }
 
 .modal__title {
@@ -159,19 +169,24 @@
     display: flex;
 
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
 
     color: var(--main-text-color);
+
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+        line-height: 24px;
+        justify-content: space-evenly; 
+    }
 }
 
 .checkbox {
@@ -181,7 +196,7 @@
     appearance: none;
 
     &:checked+ .checkbox__icon{
-        background-image: url(../images/icon-check-color.svg);
+        background-image: url(../images/icons/icon-check-color.svg);
         background-size: cover;
         }
     }
@@ -192,22 +207,27 @@
     margin-bottom: auto;
     width: 16px;
     height: 15px;
-    background-image: url(../images/checkbox-icon.svg);
+    background-image: url(../images/icons/checkbox-icon.svg);
 
     transition: background-image var(--duration) var(--timing-function);
 }
 
 .checkbox__text {
-    display: block;
+    display: inline-block;
+    margin-left: 8px;
 }
 
 .checkbox__link {
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
 
     letter-spacing: 0.03em;
     color: var(--accent-color);
 
+    @media screen and (min-width:1200px) {
+            font-size: 14px;
+            line-height: 24px;
+        }
 }
