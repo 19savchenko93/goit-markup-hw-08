@@ -6,10 +6,10 @@
 
 .thumb {
     display: flex;
-    width: 270px;
-    height: 120px;
     justify-content: center;
     align-items: center;
+    height: 120px;
+
     margin-bottom: 30px;
     background-color: var(--background-gray);
     border-radius: 4px;
@@ -19,17 +19,27 @@
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
-    display: flex;
     list-style: none;
+
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
 }
 
 .benefits__item {
     display: block;
-    margin-right: 30px;
-    width: 270px;
+    margin-bottom: 30px;
 
-    &:last-child{
-        margin-right: 0;
+    @media screen and (min-width: 768px){
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 8 * 15px) / 4);
+        margin: 15px;
     }
 }
 
@@ -44,6 +54,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-text-color);
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
 }
 
 .benefits__text {

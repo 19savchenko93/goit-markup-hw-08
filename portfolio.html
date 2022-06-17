@@ -14,10 +14,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.min.css" />
 </head>
-
 <body class="page">
     <!-- Header -->
-    <header class="header">
+    <!-- <header class="header">
         <div class="container header-container">
             <a class="logo" href="./index.html"><span class="logo--accent">Web</span>Studio</a>
             <nav class="navigation">
@@ -40,8 +39,9 @@
                         </svg>+38 096 111 11 11</a></li>
             </ul>
         </div>
-    </header>
+    </header> -->
     <main>
+        <a class="navigation__link" href="./index.html ">Студия</a>
         <!-- Portfolio -->
         <section class="portfolio">
             <div class="container filter-container">
@@ -60,7 +60,30 @@
                     <li class="examples__item">
                         <a class="examples__link" href="">
                             <div class="examples__thumb">
-                                <img class="img" src="./images/portfolio-img-1.jpg" alt="Веб-сайт Технокряк" width="370" height="294">
+                                <picture>
+                                    <source 
+                                        media="(min-width:1200px )" 
+                                        srcset="
+                                            ./images/content/portfolio/portfolio-img-1-lg.jpg 1x, 
+                                            ./images/content/portfolio/portfolio-img-1-lg@2x.jpg 2x
+                                            " 
+                                        type="image/jpg" />
+                                    <source 
+                                        media="(min-width:768px )" 
+                                        srcset="
+                                            ./images/content/portfolio/portfolio-img-1-md.jpg 1x, 
+                                            ./images/content/portfolio/portfolio-img-1-md@2x.jpg 2x
+                                            " 
+                                        type="image/jpg" />
+                                    <source 
+                                        media="(max-width:767px )" 
+                                        srcset="
+                                            ./images/content/portfolio/portfolio-img-1-sm.jpg 1x, 
+                                            ./images/content/portfolio/portfolio-img-1-sm@2x.jpg 2x
+                                            " 
+                                        type="image/jpg" />
+                                    <img class="img" src="./images/content/portfolio/portfolio-img-1-sm.jpg" alt="Веб-сайт Технокряк">
+                                </picture>
                                 <div class="thumb__overlay">
                                     <p class="thumb__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
@@ -74,7 +97,30 @@
                     <li class="examples__item">
                         <a class="examples__link" href="">
                             <div class="examples__thumb">
-                                <img class="img" src="./images/portfolio-img-2.jpg" alt="Постер Нью Орлеан и Голден Стар" width="370" height="294">
+                                <picture>
+                                    <source 
+                                        media="(min-width:1200px )" 
+                                        srcset="
+                                            ./images/content/portfolio/portfolio-img-2-lg.jpg 1x, 
+                                            ./images/content/portfolio/portfolio-img-2-lg@2x.jpg 2x
+                                            " 
+                                        type="image/jpg" />
+                                    <source 
+                                        media="(min-width:768px )" 
+                                        srcset="
+                                            ./images/content/portfolio/portfolio-img-2-md.jpg 1x, 
+                                            ./images/content/portfolio/portfolio-img-2-md@2x.jpg 2x
+                                            " 
+                                        type="image/jpg" />
+                                    <source 
+                                        media="(max-width:767px )" 
+                                        srcset="
+                                            ./images/content/portfolio/portfolio-img-2-sm.jpg 1x, 
+                                            ./images/content/portfolio/portfolio-img-2-sm@2x.jpg 2x
+                                            " 
+                                        type="image/jpg" />
+                                    <img class="img" src="./images/content/portfolio/portfolio-img-2-sm.jpg" alt="Постер Нью Орлеан и Голден Стар">
+                                </picture>
                                 <div class="thumb__overlay">
                                     <p class="thumb__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -89,7 +135,30 @@
                     <li class="examples__item">
                         <a class="examples__link" href="">
                             <div class="examples__thumb">
-                                <img class="img" src="./images/portfolio-img-3.jpg" alt="Ресторан Сифуд" width="370" height="294">
+                                <picture>
+                                    <source 
+                                        media="(min-width:1200px )" 
+                                        srcset="
+                                            ./images/content/portfolio/portfolio-img-3-lg.jpg 1x, 
+                                            ./images/content/portfolio/portfolio-img-3-lg@2x.jpg 2x
+                                            " 
+                                        type="image/jpg" />
+                                    <source 
+                                        media="(min-width:768px )" 
+                                        srcset="
+                                            ./images/content/portfolio/portfolio-img-3-md.jpg 1x, 
+                                            ./images/content/portfolio/portfolio-img-3-md@2x.jpg 2x
+                                            " 
+                                        type="image/jpg" />
+                                    <source 
+                                        media="(max-width:767px )" 
+                                        srcset="
+                                            ./images/content/portfolio/portfolio-img-3-sm.jpg 1x, 
+                                            ./images/content/portfolio/portfolio-img-3-sm@2x.jpg 2x
+                                            " 
+                                        type="image/jpg" />
+                                    <img class="img" src="./images/content/portfolio/portfolio-img-3-sm.jpg" alt="Ресторан Сифуд">
+                                </picture>
                                 <div class="thumb__overlay">
                                     <p class="thumb__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -104,7 +173,30 @@
                     <li class="examples__item">
                         <a class="examples__link" href="">
                             <div class="examples__thumb">
-                                <img class="img" src="./images/portfolio-img-4.jpg" alt="Проект Прайм" width="370" height="294">
+                                <picture>
+                                    <source 
+                                        media="(min-width:1200px )" 
+                                        srcset="
+                                            ./images/content/portfolio/portfolio-img-4-lg.jpg 1x, 
+                                            ./images/content/portfolio/portfolio-img-4-lg@2x.jpg 2x
+                                            " 
+                                        type="image/jpg" />
+                                    <source 
+                                        media="(min-width:768px )" 
+                                        srcset="
+                                            ./images/content/portfolio/portfolio-img-4-md.jpg 1x, 
+                                            ./images/content/portfolio/portfolio-img-4-md@2x.jpg 2x
+                                            " 
+                                        type="image/jpg" />
+                                    <source 
+                                        media="(max-width:767px )" 
+                                        srcset="
+                                            ./images/content/portfolio/portfolio-img-4-sm.jpg 1x, 
+                                            ./images/content/portfolio/portfolio-img-4-sm@2x.jpg 2x
+                                            " 
+                                        type="image/jpg" />
+                                    <img class="img" src="./images/content/portfolio/portfolio-img-4-sm.jpg" alt="Проект Прайм">
+                                </picture>
                                 <div class="thumb__overlay">
                                     <p class="thumb__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -119,7 +211,30 @@
                     <li class="examples__item">
                         <a class="examples__link" href="">
                             <div class="examples__thumb">
-                                <img class="img" src="./images/portfolio-img-5.jpg" alt="Проект Боксис" width="370" height="294">
+                                <picture>
+                                    <source 
+                                        media="(min-width:1200px )" 
+                                        srcset="
+                                            ./images/content/portfolio/portfolio-img-5-lg.jpg 1x, 
+                                            ./images/content/portfolio/portfolio-img-5-lg@2x.jpg 2x
+                                            " 
+                                        type="image/jpg" />
+                                    <source 
+                                        media="(min-width:768px )" 
+                                        srcset="
+                                            ./images/content/portfolio/portfolio-img-5-md.jpg 1x, 
+                                            ./images/content/portfolio/portfolio-img-5-md@2x.jpg 2x
+                                            " 
+                                        type="image/jpg" />
+                                    <source 
+                                        media="(max-width:767px )" 
+                                        srcset="
+                                            ./images/content/portfolio/portfolio-img-5-sm.jpg 1x, 
+                                            ./images/content/portfolio/portfolio-img-5-sm@2x.jpg 2x
+                                            " 
+                                        type="image/jpg" />
+                                    <img class="img" src="./images/content/portfolio/portfolio-img-5-sm.jpg" alt="Проект Боксис">
+                                </picture>
                                 <div class="thumb__overlay">
                                     <p class="thumb__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -134,7 +249,30 @@
                     <li class="examples__item">
                         <a class="examples__link" href="">
                             <div class="examples__thumb">
-                                <img class="img" src="./images/portfolio-img-6.jpg" alt="Инспирейшен хэз но бордерс" width="370" height="294">
+                                <picture>
+                                    <source 
+                                        media="(min-width:1200px )" 
+                                        srcset="
+                                            ./images/content/portfolio/portfolio-img-6-lg.jpg 1x, 
+                                            ./images/content/portfolio/portfolio-img-6-lg@2x.jpg 2x
+                                            " 
+                                        type="image/jpg" />
+                                    <source 
+                                        media="(min-width:768px )" 
+                                        srcset="
+                                            ./images/content/portfolio/portfolio-img-6-md.jpg 1x, 
+                                            ./images/content/portfolio/portfolio-img-6-md@2x.jpg 2x
+                                            " 
+                                        type="image/jpg" />
+                                    <source 
+                                        media="(max-width:767px )" 
+                                        srcset="
+                                            ./images/content/portfolio/portfolio-img-6-sm.jpg 1x, 
+                                            ./images/content/portfolio/portfolio-img-6-sm@2x.jpg 2x
+                                            " 
+                                        type="image/jpg" />
+                                    <img class="img" src="./images/content/portfolio/portfolio-img-6-sm.jpg" alt="Инспирейшен хэз но бордерс">
+                                </picture>
                                 <div class="thumb__overlay">
                                     <p class="thumb__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -149,7 +287,30 @@
                     <li class="examples__item">
                         <a class="examples__link" href="">
                             <div class="examples__thumb">
-                                <img class="img" src="./images/portfolio-img-7.jpg" alt="Издание Лимитед Идишн" width="370" height="294">
+                                <picture>
+                                    <source 
+                                        media="(min-width:1200px )" 
+                                        srcset="
+                                            ./images/content/portfolio/portfolio-img-7-lg.jpg 1x, 
+                                            ./images/content/portfolio/portfolio-img-7-lg@2x.jpg 2x
+                                            " 
+                                        type="image/jpg" />
+                                    <source 
+                                        media="(min-width:768px )" 
+                                        srcset="
+                                            ./images/content/portfolio/portfolio-img-7-md.jpg 1x, 
+                                            ./images/content/portfolio/portfolio-img-7-md@2x.jpg 2x
+                                            " 
+                                        type="image/jpg" />
+                                    <source 
+                                        media="(max-width:767px )" 
+                                        srcset="
+                                            ./images/content/portfolio/portfolio-img-7-sm.jpg 1x, 
+                                            ./images/content/portfolio/portfolio-img-7-sm@2x.jpg 2x
+                                            " 
+                                        type="image/jpg" />
+                                    <img class="img" src="./images/content/portfolio/portfolio-img-7-sm.jpg" alt="Издание Лимитед Идишн">
+                                </picture>
                                 <div class="thumb__overlay">
                                     <p class="thumb__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -164,7 +325,30 @@
                     <li class="examples__item">
                         <a class="examples__link" href="">
                             <div class="examples__thumb">
-                                <img class="img" src="./images/portfolio-img-8.jpg" alt="Проект ЛАБ" width="370" height="294">
+                                <picture>
+                                    <source 
+                                        media="(min-width:1200px )" 
+                                        srcset="
+                                            ./images/content/portfolio/portfolio-img-8-lg.jpg 1x, 
+                                            ./images/content/portfolio/portfolio-img-8-lg@2x.jpg 2x
+                                            " 
+                                        type="image/jpg" />
+                                    <source 
+                                        media="(min-width:768px )" 
+                                        srcset="
+                                            ./images/content/portfolio/portfolio-img-8-md.jpg 1x, 
+                                            ./images/content/portfolio/portfolio-img-8-md@2x.jpg 2x
+                                            " 
+                                        type="image/jpg" />
+                                    <source 
+                                        media="(max-width:767px )" 
+                                        srcset="
+                                            ./images/content/portfolio/portfolio-img-8-sm.jpg 1x, 
+                                            ./images/content/portfolio/portfolio-img-8-sm@2x.jpg 2x
+                                            " 
+                                        type="image/jpg" />
+                                    <img class="img" src="./images/content/portfolio/portfolio-img-8-sm.jpg" alt="Проект ЛАБ">
+                                </picture>
                                 <div class="thumb__overlay">
                                     <p class="thumb__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -179,7 +363,30 @@
                     <li class="examples__item">
                         <a class="examples__link" href="">
                             <div class="examples__thumb">
-                                <img class="img" src="./images/portfolio-img-9.jpg" alt="Гроувинг Бизнес" width="370" height="294">
+                                <picture>
+                                    <source 
+                                        media="(min-width:1200px )" 
+                                        srcset="
+                                            ./images/content/portfolio/portfolio-img-9-lg.jpg 1x, 
+                                            ./images/content/portfolio/portfolio-img-9-lg@2x.jpg 2x
+                                            " 
+                                        type="image/jpg" />
+                                    <source 
+                                        media="(min-width:768px )" 
+                                        srcset="
+                                            ./images/content/portfolio/portfolio-img-9-md.jpg 1x, 
+                                            ./images/content/portfolio/portfolio-img-9-md@2x.jpg 2x
+                                            " 
+                                        type="image/jpg" />
+                                    <source 
+                                        media="(max-width:767px )" 
+                                        srcset="
+                                            ./images/content/portfolio/portfolio-img-9-sm.jpg 1x, 
+                                            ./images/content/portfolio/portfolio-img-9-sm@2x.jpg 2x
+                                            " 
+                                        type="image/jpg" />
+                                    <img class="img" src="./images/content/portfolio/portfolio-img-9-sm.jpg" alt="Гроувинг Бизнес">
+                                </picture>
                                 <div class="thumb__overlay">
                                     <p class="thumb__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                         позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
@@ -196,7 +403,7 @@
         </section>
     </main>
     <!-- Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container footer-container">
             <div class="footer__content">
                 <a class="logo logo-footer" href="./index.html"><span class="logo--accent">Web</span>Studio</a>
@@ -259,6 +466,6 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>

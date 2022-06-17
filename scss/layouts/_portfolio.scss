@@ -8,10 +8,19 @@
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
-    display: flex;
     list-style: none;
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
     gap: 8px;
+
+    @media screen and (min-width: 768px) {
+            display: flex;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            justify-content: center;
+        }
 }
 
 .filter__btn {
@@ -41,13 +50,21 @@
 
 /* Examples */
 .examples__list {
-    display: flex;
-    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none;
     margin-top: -30px;
     margin-left: -30px;
+
+        @media screen and (min-width: 768px) {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        
+            @media screen and (min-width: 1200px) {
+                display: flex;
+                flex-wrap: wrap;
+}
 }
 
 .examples__item {

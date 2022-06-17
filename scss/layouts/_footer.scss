@@ -6,7 +6,14 @@
 }
 
 .footer__content {
-    margin-right: 70px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
+     @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+     }
 }
 
 .address__item {
@@ -45,7 +52,15 @@
 }
 
 .join {
-    margin-right: 93px;
+    margin-top: 60px;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 0;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+     }
 }
 
 .join__title {
@@ -58,14 +73,36 @@
     text-transform: uppercase;
     color: var(--white-text-color);
     margin-bottom: 20px;
-}
 
+        @media screen and (min-width: 1200px) {
+                text-align: left;
+            }
+}
+.footer-socials__list{
+    list-style: none;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 .sign-up {
-    margin-left: auto;
+    margin-top: 60px;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+            margin-top: 0;
+            margin-left: auto;
+        }
 }
 
 .sign-up__form {
-    display: flex;
+    @media screen and (min-width: 1200px) {
+            display: flex;
+            gap: 12px;
+        }
 }
 
 .sign-up__title {
@@ -80,14 +117,19 @@
     text-transform: uppercase;
 
     color: var(--white-text-color);
+
+    @media screen and (min-width: 1200px) {
+            text-align: left;
+        }
 }
 
 .sign-up__input {
-    display: inline-block;
+    display: block;
+    width: 100%;
     padding-left: 16px;
     padding-bottom: 15px;
     padding-top: 15px;
-    width: 358px;
+    margin-bottom: 20px;
     height: 50px;
 
     font-style: normal;
@@ -118,4 +160,14 @@
     &:focus{
         border: 1px solid var(--accent-color);
     }
+
+    @media screen and (max-width: 767px) {
+            width: 100%;
+        }
+    @media screen and (min-width: 768px) {
+             width: 450px;
+        }
+    @media screen and (min-width: 1200px) {
+            width: 358px;
+}
 }
